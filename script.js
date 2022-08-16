@@ -248,3 +248,13 @@ function positiveSum(arr) {
 }
 //positiveSum([1, -4, 7, 12])
 //
+
+function repeatStr(n, s) {
+   let str = '';
+   for (let i = 0; i < n; i++) {
+      str += s;
+
+   }
+   return str;
+}
+//repeatStr(6, "I");
