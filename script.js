@@ -123,7 +123,6 @@
 // //console.log(filterFunction(students, el => !el.isMarried));
 
 
-
 // const arrayOfSheep = [true,  true,  true,  false,
 //     true,  true,  true,  true ,
 //     true,  false, true,  false,
@@ -233,28 +232,44 @@
 // XO("AdWsxxfxxaOOEQE")
 
 
-function stringToArray(string){
-   return string.split(' ')
-    
-	// code code code
+function stringToArray(string) {
+    return string.split(' ')
+
+    // code code code
 
 }
 
 console.log(stringToArray("Robin Singh"));
 
 function positiveSum(arr) {
-   return console.log(arr.filter(x => x >= 0).reduce((a, c) => a + c, 0));
+    return console.log(arr.filter(x => x >= 0).reduce((a, c) => a + c, 0));
 
 }
+
 //positiveSum([1, -4, 7, 12])
 //
 
 function repeatStr(n, s) {
-   let str = '';
-   for (let i = 0; i < n; i++) {
-      str += s;
+    let str = '';
+    for (let i = 0; i < n; i++) {
+        str += s;
 
-   }
-   return str;
+    }
+    return str;
 }
+
 //repeatStr(6, "I");
+
+function century(year) {
+    return console.log(Math.ceil(year / 100));
+
+}
+
+//century(1701)
+
+function rowSumOddNumbers(n) {
+    return Math.pow(n, 3)
+}
+
+//console.log(rowSumOddNumbers(2));
+
