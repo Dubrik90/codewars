@@ -272,3 +272,11 @@ function rowSumOddNumbers(n) {
 }
 
 //console.log(rowSumOddNumbers(2));
+function stringToArray(string){
+    return string.split(' ')
+
+    // code code code
+
+}
+
+//console.log(stringToArray("Robin Singh"));
