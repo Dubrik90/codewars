@@ -272,4 +272,3 @@ function rowSumOddNumbers(n) {
 }
 
 //console.log(rowSumOddNumbers(2));
-
