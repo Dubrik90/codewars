@@ -240,4 +240,11 @@ function stringToArray(string){
 
 }
 
-console.log(stringToArray("Robin Singh")); 
+console.log(stringToArray("Robin Singh"));
+
+function positiveSum(arr) {
+   return console.log(arr.filter(x => x >= 0).reduce((a, c) => a + c, 0));
+
+}
+//positiveSum([1, -4, 7, 12])
+//
