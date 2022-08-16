@@ -258,3 +258,9 @@ function repeatStr(n, s) {
    return str;
 }
 //repeatStr(6, "I");
+
+function century(year) {
+   return console.log(Math.ceil(year / 100));
+
+}
+//century(1701)
