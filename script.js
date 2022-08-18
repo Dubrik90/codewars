@@ -329,3 +329,52 @@ function opposite(number) {
     }
 }
 ////111111111111111111111
+const binaryArrayToNumber = arr => {
+    return parseInt(arr.join(""), 2)
+};
+
+function even_or_odd(number) {
+    return (number % 2 == 0) ? "Even" : "Odd";
+
+}
+
+//even_or_odd(number);
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+    if ((fuelLeft * mpg) > distanceToPump) {
+        return true
+    } else {
+        return false
+    }
+};
+
+const reverseSeq = n => {
+    let newArray = [];
+    for (i = 1; i <= n; i++) {
+        newArray.unshift(i)
+    }
+    return console.log(newArray)
+
+};
+
+//reverseSeq(5)
+
+function greet(name, owner) {
+    return (name.toLocaleString() === owner.toLocaleString()) ? "Hello boss" : "Hello guest";
+}
+
+function bmi(weight, height) {
+    let ind = weight / Math.pow(height, 2)
+    console.log(ind)
+    if (ind <= 18.5) {
+        return "Underweight"
+    } else if (ind <= 25.0) {
+        return "Normal"
+
+    } else if (ind <= 30.0) {
+        return "Overweight"
+    } else if (ind > 30) {
+        return "Obese"
+    }
+}
+
+//bmi(80, 1.75)
