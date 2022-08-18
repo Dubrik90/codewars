@@ -279,3 +279,36 @@ function stringToArray(string) {
 
 //console.log(stringToArray("Robin Singh"));
 
+function abbrevName(name) {
+    name.toUpperCase().split(' ').map((el) => (`${el[0]}`)).join(".");
+}
+
+//abbrevName("Sam Harris iop")
+
+function hero(bullets, dragons) {
+    if (dragons * 2 <= bullets) {
+        return true
+    } else {
+        return false
+    }
+}
+
+//hero(100, 40)
+
+//  && pin > 0 && pin.isInteger()
+
+function validatePIN(pin) {
+    // let num = Number(pin)
+    if ((pin.length === 4 || pin.length === 6) && pin > 0 && Number.isInteger(pin) && Number(pin)) {
+        return console.log(true)
+    } else {
+        return console.log(false)
+    }
+    // const preparedPin = pin.replace(/\D/g, '');
+    // return preparedPin === pin && (pin.length === 4 || pin.length === 6);
+}
+
+//validatePIN("1234")
+//let haystack = ['3', '123124234', undefined, 'needle', 'world', 'hay', 2, '3', true, false];
+//let haystack = ['283497238987234', 'a dog', 'a cat', 'some random junk', 'a piece of hay', 'needle', 'something somebody lost a while ago'];
+//let haystack = [1,2,3,4,5,6,7,8,8,7,5,4,3,4,5,6,67,5,5,3,3,4,2,34,234,23,4,234,324,324,'needle',1,2,3,4,5,5,6,5,4,32,3,45,54];
