@@ -235,14 +235,12 @@
 function stringToArray(string) {
     return string.split(' ')
 
-    // code code code
-
 }
 
-console.log(stringToArray("Robin Singh"));
+stringToArray("Robin Singh");
 
 function positiveSum(arr) {
-    return console.log(arr.filter(x => x >= 0).reduce((a, c) => a + c, 0));
+    return arr.filter(x => x >= 0).reduce((a, c) => a + c, 0);
 
 }
 
@@ -272,11 +270,12 @@ function rowSumOddNumbers(n) {
 }
 
 //console.log(rowSumOddNumbers(2));
-function stringToArray(string){
+///////////////////////////////////////////////////////////////////
+function stringToArray(string) {
     return string.split(' ')
 
-    // code code code
 
 }
 
 //console.log(stringToArray("Robin Singh"));
+
