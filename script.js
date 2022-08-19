@@ -399,3 +399,28 @@ function squareSum(numbers) {
 }
 
 //console.log(squareSum([0, 3, 4, 5]))
+
+function openOrSenior(data) {
+    return data.map(([age, handicap]) => (age >= 55 && handicap > 7) ? 'Senior' : 'Open')
+}
+
+//console.log(openOrSenior([[59, 12],[55,-1],[12, -2],[12, 12]]))
+
+function lovefunc(flower1, flower2) {
+    if (flower1 % 2 === 0 && flower2 % 2 === 1 || flower1 % 2 === 1 && flower2 % 2 === 0) {
+        return true
+    } else {
+        return false
+    }
+}
+
+function betterThanAverage(classPoints, yourPoints) {
+    let carrent = (classPoints.reduce((sum, car) => sum + car)) / classPoints.length
+    if (carrent < yourPoints) {
+        return true
+    } else {
+        return false
+    }
+}
+
+//betterThanAverage([100, 40, 34, 57, 29, 72, 57, 88], 75)
