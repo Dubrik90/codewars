@@ -378,3 +378,24 @@ function bmi(weight, height) {
 }
 
 //bmi(80, 1.75)
+
+function fakeBin(x) {
+    console.log(x.split("").map(el => el >= 5 ? el = 1 : el = 0).join(''))
+}
+
+//fakeBin('45385593107843568')
+
+let mas = [9, 3, '7', '3']
+
+function sumMix(x) {
+    let newMas = mas.map(el => Number(el))
+    return newMas
+}
+
+//sumMix(mas)
+
+function squareSum(numbers) {
+    return numbers.map(el => Math.pow(el, 2)).reduce((sum, carrent) => sum + carrent, 0)
+}
+
+//console.log(squareSum([0, 3, 4, 5]))
