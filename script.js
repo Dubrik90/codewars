@@ -424,3 +424,40 @@ function betterThanAverage(classPoints, yourPoints) {
 }
 
 //betterThanAverage([100, 40, 34, 57, 29, 72, 57, 88], 75)
+
+function removeExclamationMarks(s) {
+    console.log(s.split('').filter((el) => el !== "!").join(""))
+
+}
+
+//removeExclamationMarks("Hello World!")
+
+//function sum (numbers) {
+//  return numbers.reduce((sam, carr) => sam + carr, 0)
+//};
+
+let min = function (list) {
+
+    //  return console.log(Math.max(...list));
+}
+
+let max = function (list) {
+    //  return console.log(Math.min(...list));
+}
+
+//max([-52, 56, 30, 29, -54, 0, -110])
+
+function grow(x) {
+    return x.reduce((sum, carrent) => sum * carrent, 1)
+}
+
+//console.log(grow([2, 2, 2, 2, 2, 2]))
+
+var countSheep = function (num) {
+    let str = ""
+    for (let i = 1; i <= num; i++) {
+        (str += `${i} ` + 'sheep...')
+    }
+}
+
+//countSheep(3)
